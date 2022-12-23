@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.sec-1-container{
+    background-image: url('./img/background.png');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+.nave-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0px;
+    padding-left: 10px;
+    padding-right: 40px;
+}
+
+.nave-container button{
+    background-color: #7b0a80;
+    padding: 11px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.nave-container button:hover{
+    background-color: #a80bb0;
+    transition: 0.5s;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 0 25px;
+}
+
+nav ul li a{
+    font-family: 'Josefin Sans', sans-serif;
+    color: #a80bb0;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 19px;
+    position: relative;
+    padding-bottom: 2px;
+}
+
+nav ul li a button{
+    border: 2px solid #a80bb0;
+    padding: 8px 4px;
+    border-radius: 6px;
+}
+
+nav ul li a::after{
+    content: " ";
+    width: 0%;
+    height: 4px;
+    background-color: #a80bb0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+nav ul li a:hover::after{
+    width: 90%;
+    cursor: pointer;
+    transition: 0.5s;
+    color: #a80bb0;
+}
+
+/*======================= MEIO ========================*/
+
+.titu-parte-cima{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    padding-top: 7%;
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 6px;
+    color: #000;
+}
+
+.meio-saiba{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.meio-saiba a:hover{
+    background-color: #a80bb0;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.meio-saiba a{
+    border-radius: 6px;
+    background-color: #7b0a80;
+    padding: 15px 45px;
+    font-size: 18px;
+    color: #ffffff;
+    border: 3px solid #a80bb0;
+}
